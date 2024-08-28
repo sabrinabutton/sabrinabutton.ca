@@ -25,7 +25,7 @@ const BlogPost = ({ post }) => {
   return (
     <>
       <Head>
-        <title>{"Blog - " + post.title}</title>
+        <title>{post.title}</title>
         <meta name="description" content={post.preview} />
       </Head>
       {data.showCursor && <Cursor />}
@@ -44,7 +44,7 @@ const BlogPost = ({ post }) => {
           ></img>
           <h1
             ref={textOne}
-            className="mt-10 text-4xl mob:text-2xl laptop:text-6xl text-bold"
+            className="mt-10 text-4xl mob:text-2xl laptop:text-6xl text-bold pixelify-sans"
           >
             {post.title}
           </h1>

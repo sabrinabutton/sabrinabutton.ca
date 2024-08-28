@@ -1,1 +1,175 @@
-{"name":"Chetan","headerTaglineOne":"Hello 👋","headerTaglineTwo":"I'm Chetan Verma - curious","headerTaglineThree":"designer and devloper","headerTaglineFour":" based in New Delhi, India.","showCursor":true,"showBlog":true,"darkMode":true,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/chetanverma16"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/chetanverma7/"},{"id":"3","title":"Twitter","link":"https://twitter.com/realchetanverma"},{"id":"4","title":"Blog","link":"https://blog.chetanverma.com/"},{"id":"5","title":"Email","link":"mailto:hello@chetanverma.com"}],"projects":[{"id":"1","title":"Project One Test","description":"Web Design","imageSrc":"https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"2","title":"Project Two","description":"Web Development","imageSrc":"https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"3","title":"Project Three","description":"Design","imageSrc":"https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"4","title":"Project Four","description":"Marketing","imageSrc":"https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"5","title":"Project Five","description":"Development","imageSrc":"https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"6","title":"Project Six","description":"Design & Development","imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"}],"services":[{"id":"1","title":"Art Direction","description":"We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."},{"id":"2","title":"Branding","description":"We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."},{"id":"3","title":"Web Design","description":"We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."},{"id":"4","title":"3D Design","description":"We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."}],"aboutpara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","resume":{"tagline":"👋  I'm a software engineer, product designer.","description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.","experiences":[{"id":"1","dates":"March 2022 - Present","type":"Full Time","position":"Frontend Engineer at X","bullets":"Bullet One, Bullet Two"},{"id":"d495c23b-4f65-479a-9b8a-cfbc1c089725","dates":"July 2020 - March 2022","type":"Full Time","position":"Frontend Engineer at X","bullets":"Worked on the frontend of a React application, Worked on the frontend of a React application"}],"education":{"universityName":"University X","universityDate":"2016-2020","universityPara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"},"languages":["Javascript","HTML5","CSS","Python","Go"],"frameworks":["React","Typescript","NodeJs"],"others":["Figma","AdobeXD","AWS"]}}
+{
+  "name": "sabrinabutton",
+  "headerTaglineOne": "I'm Sabrina Button.",
+  "headerTaglineTwo": {
+    "txt": "Robotics engineering student",
+    "place": "Queen's University.",
+    "link": "https://queensu.ca"
+  },
+  "headerTaglineThree": {
+    "txt": "Co-captain",
+    "place": "aQuatonomous.",
+    "link": "https://aquatonomous.ca"
+  },
+
+  "headerTaglineFour": {
+    "txt": "Prev. Autonomous Vehicle Simulation",
+    "place": "NVIDIA.",
+    "link": "https://nvda.ai"
+  },
+  "showCursor": true,
+  "showBlog": true,
+  "darkMode": true,
+  "showResume": true,
+  "headshot": "https://avatars.githubusercontent.com/u/43886209?v=4",
+  "socials": [
+    {
+      "id": "1",
+      "title": "Github",
+      "link": "https://github.com/sabrinabutton"
+    },
+    {
+      "id": "2",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/sabrinabutton/"
+    },
+    {
+      "id": "3",
+      "title": "Twitter/X",
+      "link": "https://twitter.com/sabrinabuttonn"
+    },
+    {
+      "id": "4",
+      "title": "Medium",
+      "link": "https://medium.com/@sabrinarosebutton"
+    },
+    { "id": "5", "title": "Email", "link": "mailto:sabrina.button@queensu.ca" }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "aQuatonomous",
+      "date": "May 2023 - September 2023",
+      "description": "ROS2 package for the Maritime Robotics AS Otter USV / novel localization algorithm mapping LiDAR data to satellite imagery.",
+      "imageSrc": "https://www.unodc.org/rosaf/uploads/images/b7e1e580-c611-11ea-9b24-523c65baea0e.png",
+      "url": "/"
+    },
+    {
+      "id": "2",
+      "title": "Otter ROS / SaILL",
+      "date": "May 2023 - September 2023",
+      "description": "ROS2 package for the Maritime Robotics AS Otter USV / novel localization algorithm mapping LiDAR data to satellite imagery.",
+      "imageSrc": "https://i.imgur.com/O9p8jia.jpeg",
+      "url": "/"
+    },
+    {
+      "id": "3",
+      "title": "CO2 Monitoring Lynx Rover",
+      "date": "January 2023 - April 2023",
+      "description": "",
+      "imageSrc": "https://i.imgur.com/3ZmIaMh.png",
+      "url": "/"
+    },
+    {
+      "id": "4",
+      "title": "Antenna Robotic Arm",
+      "date": "May 2022 - July 2022",
+      "description": "ROS2 package for the Maritime Robotics AS Otter USV / novel localization algorithm mapping LiDAR data to satellite imagery.",
+      "imageSrc": "https://www.unodc.org/rosaf/uploads/images/b7e1e580-c611-11ea-9b24-523c65baea0e.png",
+      "url": "/"
+    },
+    {
+      "id": "5",
+      "title": "Model Autonomous Mining Loader",
+      "date": "January 2022 - April 2022",
+      "description": "ROS2 package for the Maritime Robotics AS Otter USV / novel localization algorithm mapping LiDAR data to satellite imagery.",
+      "imageSrc": "https://i.imgur.com/ioj2Dz9.png",
+      "url": "/"
+    },
+
+    {
+      "id": "1",
+      "title": "Extraterrestrial Soil Analysis Apparatus",
+      "date": "January 2022 - April 2022",
+      "description": "Queen's Space Engineering Team",
+      "imageSrc": "https://i.imgur.com/3F2Oiie.jpeg",
+      "url": "/"
+    },
+
+    {
+      "id": "1",
+      "title": "Arduino Lego Game Console",
+      "date": "September 2020",
+      "description": "Machine learning practice project which applies a simple neural net to determine if a lung x-ray depicts a patient with Covid-19, or pneumonia.",
+      "imageSrc": "https://www.unodc.org/rosaf/uploads/images/b7e1e580-c611-11ea-9b24-523c65baea0e.png",
+      "url": "/"
+    }
+  ],
+  "services": [],
+  "aboutpara": [
+    "I’m a motivated Mechatronics and Robotics Engineering student at Queen’s University, passionate about artificial intelligence, autonomous vehicles and robotics. Ultimately, I aspire to leverage these technologies to build a safer, more sustainable world—I’m impact-driven, value feedback, and love to learn.",
+    "I find myself deeply interested in robotics in unpredictable outdoor environments. In the summer of 2023, I had the opportunity to conduct a research project on autonomous perception and navigation in uncrewed surface vehicles (USVs) at Ingenuity Labs using the Maritime Robotics AS Otter USV. This experience ignited my interest in autonomous vehicles and ocean robotics, leading me to found Queen's University's Autonomous Surface Vessel Design Team, aQuatonomous. I have most recently exercised my enthusiasm for autonomous robotics as part of NVIDIA's Autonomous Vehicles Planning and Control team."
+  ],
+
+  "resume": {
+    "resumeLink": "https://drive.google.com/file/d/1g2OVjkxtuVgMRxHnWEV-fLa_sANLzdi6/view?usp=sharing",
+    "name": "sabrinabutton.",
+    "tagline": "I'm a robotics engineering student driven by impact.",
+    "description": "I have delivered world-class robotics software solutions for autonomous vehicles, ocean drones, and industrial robots. I am passionate about building software that interacts with the physical world.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "May 2024 - August 2024",
+        "type": "Internship",
+        "company": "NVIDIA",
+        "position": "Autonomous Vehicles Planning and Control",
+        "bullets": []
+      },
+      {
+        "id": "1",
+        "dates": "May 2023 - August 2023",
+        "type": "Research Assistantship",
+        "company": "Ingenuity Labs",
+        "position": "Offroad Robotics Uncrewed Surface Vessel (USV) Research",
+        "bullets": []
+      },
+      {
+        "id": "1",
+        "dates": "June 2021 - August 2021",
+        "type": "Internship",
+        "company": "Ciena",
+        "position": "Systems Automation Engineering",
+        "bullets": []
+      },
+      {
+        "id": "1",
+        "dates": "October 2020 - December 2020",
+        "type": "Internship",
+        "company": "Ciena",
+        "position": "Flowers-of-Sulphur Chamber Hardware Integration",
+        "bullets": []
+      },
+      {
+        "id": "1",
+        "dates": "June 2019 - August 2019",
+        "type": "Internship",
+        "company": "Kinaxis",
+        "position": "Front-end Web Development",
+        "bullets": []
+      }
+    ],
+    "education": {
+      "universityName": "Queen's University",
+      "universityDate": "2021 - 2026",
+      "universityPara": "B.A.Sc. Candidate in Mechatronics and Robotics Engineering"
+    },
+    "languages": ["C++", "Python", "Javascript"],
+    "frameworks": ["ROS", "Bazel", "NodeJs"],
+    "hardware": [
+      "Solidworks",
+      "Altium Designer",
+      "3D Printing",
+      "Electrical and Mechanical Prototyping"
+    ]
+  }
+}

@@ -42,27 +42,34 @@ const Resume = () => {
           <div className="mt-10 w-full flex flex-col items-center">
             <div
               className={`w-full ${
-                mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
+                mount && theme.theme === "dark" ? "bg-gray" : "bg-gray-50"
               } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
             >
-              <h1 className="text-3xl font-bold">{name}</h1>
+              <h1 className="text-3xl font-bold">{resume.name}</h1>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
-              <h2 className="w-4/5 text-xl mt-5 opacity-50">
-                {resume.description}
-              </h2>
+              <div className="mt-5">
+                <Button
+                  onClick={() => window.open(resume.resumeLink)}
+                  type={"secondary"}
+                >
+                  View my complete resume here!
+                </Button>
+              </div>
+              <h2 className="text-xl mt-5 opacity-50">{resume.description}</h2>
               <div className="mt-2">
                 <Socials />
               </div>
               <div className="mt-5">
-                <h1 className="text-2xl font-bold">Experience</h1>
+                <h1 className="text-2xl font-bold">Experience Overview</h1>
 
                 {resume.experiences.map(
-                  ({ id, dates, type, position, bullets }) => (
+                  ({ id, dates, type, position, company, bullets }) => (
                     <ProjectResume
                       key={id}
                       dates={dates}
                       type={type}
                       position={position}
+                      company={company}
                       bullets={bullets}
                     ></ProjectResume>
                   )
@@ -109,11 +116,11 @@ const Resume = () => {
                     </div>
                   )}
 
-                  {resume.others && (
+                  {resume.hardware && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Others</h2>
+                      <h2 className="text-lg">Hardware</h2>
                       <ul className="list-disc">
-                        {resume.others.map((other, index) => (
+                        {resume.hardware.map((other, index) => (
                           <li key={index} className="ml-5 py-2">
                             {other}
                           </li>

@@ -1,0 +1,40 @@
+---
+date: "2021-05-07T11:50:54.000Z"
+title: Pneumonia/Covid-19 Chest X-Ray Recognition ML Model
+tagline: This machine learning project applies a convolutional neural net (CNN) to determine if a lung x-ray depicts a patient with Covid-19, or pneumonia.
+preview: >-
+  This machine learning project applies a convolutional neural net (CNN) to determine if a lung x-ray depicts a patient with Covid-19, or pneumonia.
+image: >-
+  https://i.imgur.com/scFvHYo.png
+---
+
+# Project Overview
+
+This machine learning practice project applies a simple neural net to determine if a lung x-ray depicts a patient with Covid-19, or pneumonia. The dataset used in the project is the [Covid-19 Radiography Database](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database) from Kaggle. The model was trained on 3,616 images of Covid-19 patients, 5,216 images of pneumonia patients, and 5,585 images of healthy patients. The model was able to achieve an accuracy of 88% on the test set.
+
+This project utilized the Keras library, which is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.
+
+The model was trained using a convolutional neural network (CNN) architecture. CNNs are a class of deep neural networks, most commonly applied to analyzing visual imagery. They are also known as ConvNets. These networks are comprised of multiple layers of neurons, which process portions of the image, called receptive fields. The model was trained using the Adam optimizer, which is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iteratively based on training data.
+
+![Model Accuracy](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/static/my_plots.png)
+
+# Sample Images
+
+Covid
+![Covid Lung xray](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/data/test/Covid/2.png)
+
+Pneumonia
+![Pneumonia Lung xray](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/data/test/Pneumonia/0.png)
+
+Normal
+![Normal Lung xray](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/data/test/Normal/1.png)
+
+# Tech Stack
+
+- Python
+- Tensorflow
+- Keras
+
+# Links
+
+- [GitHub Repository](https://github.com/sabrinabutton/covid-pneumonia-ml)

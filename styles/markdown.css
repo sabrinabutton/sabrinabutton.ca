@@ -43,8 +43,6 @@
   @apply my-5;
 }
 
-
-
 /* Markdown Lists */
 
 .markdown-class ol {
@@ -73,10 +71,11 @@
   @apply text-black text-sm;
 }
 
-
-
 /* Image */
 
 .markdown-class img {
-  @apply max-h-96 w-full my-5 object-cover rounded-lg shadow-lg;
+  @apply w-full my-5 object-cover rounded-lg shadow-lg;
+  max-height: 40em;
+  height: auto; /* Allow the height to be constrained by max-height while preserving aspect ratio */
+  width: auto; /* Allow the width to adjust based on height */
 }

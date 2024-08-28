@@ -63,78 +63,92 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
-          <div className="mt-5">
-            <h1
-              ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
-            >
-              {data.headerTaglineOne}
-            </h1>
-            <h1
-              ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineTwo}
-            </h1>
-            <h1
-              ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineThree}
-            </h1>
-            <h1
-              ref={textFour}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineFour}
-            </h1>
+        <div className="flex flex-col laptop:flex-row">
+          <div className=" laptop:w-9/10">
+            <div className="mt-10 laptop:mt-30 p-3 laptop:p-2">
+              <h1
+                ref={textOne}
+                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5 pixelify-sans"
+              >
+                {data.headerTaglineOne}
+              </h1>
+              <h2
+                ref={textTwo}
+                className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              >
+                {data.headerTaglineTwo.txt}{" "}
+                <div className="inline-block green-blue">
+                  <Link href={data.headerTaglineTwo.link}>
+                    {"@" + data.headerTaglineTwo.place}
+                  </Link>
+                </div>
+              </h2>
+              <h2
+                ref={textThree}
+                className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              >
+                {data.headerTaglineThree.txt}{" "}
+                <div className="inline-block green-blue">
+                  {" "}
+                  <Link href={data.headerTaglineThree.link}>
+                    {"@" + data.headerTaglineThree.place}
+                  </Link>
+                </div>
+              </h2>
+              <h2
+                ref={textFour}
+                className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              >
+                {data.headerTaglineFour.txt}{" "}
+                <div className="inline-block green-blue">
+                  {" "}
+                  <Link href={data.headerTaglineFour.link}>
+                    {"@" + data.headerTaglineFour.place}
+                  </Link>
+                </div>
+              </h2>
+            </div>
+
+            <Socials className="mt-2 laptop:mt-5" />
           </div>
 
-          <Socials className="mt-2 laptop:mt-5" />
+          <div className=" laptop:w-2/10 flex items-center justify-center">
+            <img
+              src={data.headshot}
+              alt="Sabrina's Headshot"
+              className="rounded-full w-2/5 p-5 mt-10 laptop:w-full"
+              width={350}
+              height={350}
+            />
+          </div>
         </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+        <div className="mt-10 laptop:mt-30 p-3 laptop:p-2" ref={aboutRef}>
+          <h1 className=" text-2xl text-bold pixelify-sans">About.</h1>
+          {data.aboutpara.map((para) => (
+            <p className="mt-2 text-l laptop:text-xl w-full laptop:w-3/5 text-gray-500">
+              {para}
+            </p>
+          ))}
+        </div>
+
+        {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
+          <h1 className="text-2xl text-bold pixelify-sans">Work.</h1>
+
+          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
                 name={project.title}
+                date={project.date}
                 description={project.description}
-                onClick={() => window.open(project.url)}
+                onClick={() => Router.push(`/project/${project.id}`)}
               />
             ))}
           </div>
-        </div>
+        </div> */}
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
-          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
-            {data.services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                name={service.title}
-                description={service.description}
-              />
-            ))}
-          </div>
-        </div>
-        {/* This button should not go into production */}
-        {process.env.NODE_ENV === "development" && (
-          <div className="fixed bottom-5 right-5">
-            <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
-            </Link>
-          </div>
-        )}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
-        </div>
         <Footer />
       </div>
     </div>
