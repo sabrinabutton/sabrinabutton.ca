@@ -61,7 +61,7 @@ const BlogPost = ({ post }) => {
       {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
           <Button onClick={() => setShowEditor(true)} type={"primary"}>
-            Edit this blog
+            Edit this post
           </Button>
         </div>
       )}

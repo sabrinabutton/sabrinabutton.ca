@@ -95,24 +95,18 @@ export default function Home() {
                   </Link>
                 </div>
               </h2>
-              <h2
-                ref={textFour}
-                className="text-l tablet:text-xl laptop:text-xl laptopl:text-xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5 green-blue"
-              >
-                {data.headerTaglineFour}
-              </h2>
             </div>
 
             <Socials className="mt-2 laptop:mt-5" />
           </div>
 
-          <div className=" laptop:w-2/10 flex items-center justify-center">
+          <div className="laptop:w-2/10 flex flex-col items-center justify-center">
             <img
               src={data.headshot}
               alt="Sabrina's Headshot"
-              className="rounded-full w-2/5 p-5 mt-10 laptop:w-full"
-              width={350}
-              height={350}
+              className="rounded-full w-4/5 p-5 mt-10 laptop:w-4/5"
+              width={300}
+              height={300}
             />
           </div>
         </div>

@@ -30,7 +30,7 @@ const Blog = ({ posts }) => {
 
   const createBlog = () => {
     if (process.env.NODE_ENV === "development") {
-      fetch("/api/blog", {
+      fetch("/api/projects", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const Blog = ({ posts }) => {
 
   const deleteBlog = (slug) => {
     if (process.env.NODE_ENV === "development") {
-      fetch("/api/blog", {
+      fetch("/api/projects", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const Blog = ({ posts }) => {
       <>
         {data.showCursor && <Cursor />}
         <Head>
-          <title>Blog</title>
+          <title>Projects.</title>
         </Head>
         <div
           className={`container mx-auto mb-10 ${
@@ -86,7 +86,7 @@ const Blog = ({ posts }) => {
                   <div
                     className="cursor-pointer relative"
                     key={post.slug}
-                    onClick={() => Router.push(`/blog/${post.slug}`)}
+                    onClick={() => Router.push(`/projects/${post.slug}`)}
                   >
                     <img
                       className="w-full h-60 rounded-lg shadow-lg object-cover"
