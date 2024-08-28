@@ -11,8 +11,8 @@ const Footer = ({}) => {
           <h1 className="text-2xl text-bold pixelify-sans">Contact.</h1>
           <div className="mt-10">
             <h1 className="mt-2 text-l laptop:text-xl w-full laptop:w-3/5 text-gray-500">
-              I'm always happy to chat about robotics, technology, or anything
-              else on your mind—let's connect! 🚀
+              I&apos;m always happy to chat about robotics, technology, or
+              anything else on your mind—let&apos;s connect! 🚀
             </h1>
             {/* <div className="mt-5">
               <Button

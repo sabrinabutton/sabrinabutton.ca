@@ -12,11 +12,7 @@
     "link": "https://aquatonomous.ca"
   },
 
-  "headerTaglineFour": {
-    "txt": "Prev. Autonomous Vehicle Simulation",
-    "place": "NVIDIA.",
-    "link": "https://nvda.ai"
-  },
+  "headerTaglineFour": "I'm a builder who's passionate about sustainable impact.",
   "showCursor": true,
   "showBlog": true,
   "darkMode": true,

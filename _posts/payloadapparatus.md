@@ -10,12 +10,17 @@ image: >-
 
 # Project Overview
 
-The “Payload Testing Apparatus” aimed to fulfill Queen’s Space Engineering Team’s need for a chemical testing device to conduct wet chemical tests during the fall semester, in advance of the rover's payload assembly in the winter semester. The apparatus is for laboratory use, aimed at detecting biosignatures in soil samples. Three distinct models were devised to meet the client's specifications, all featuring a cylindrical body, sieve, funnel, and soil sample pathway leading to cuvettes for wet chemical biosignature testing. The chosen design prioritized simplicity and effectiveness, employing a manually operated sieve and a clever distribution system.
+The “Rover Payload Testing Apparatus” aimed to fulfill Queen’s Space Engineering Team’s need for a chemical testing device to conduct wet chemical tests for biosignatures during the fall semester, in advance of the rover's payload assembly in the winter semester. The apparatus is for laboratory use, aimed at detecting biosignatures in soil samples. Three distinct models were devised to meet the client's specifications, all featuring a cylindrical body, sieve, funnel, and soil sample pathway leading to cuvettes for wet chemical biosignature testing. The chosen design prioritized simplicity and effectiveness, employing a manually operated sieve and a clever distribution system.
 
 This fully non-electric apparatus, designed with a focus on user-friendliness, efficiently grinds soil samples, distributes them evenly, and facilitates varied cuvette placement for testing. The selection of this design was based on its minimized points of failure, cost-effectiveness, and lightweight construction, although it may be less adept at grinding coarse grains compared to designs with electric motor-driven sieves. I played key roles in brainstorming, making design choices, developing this model in CAD software, creating system diagrams, and providing technical documentation; This project was extremely beneficial to my teamwork skills, improved my abilities to collect and implement requirements by a client, and ignited my passion for integrated mechanical design.
 
+A diagram of the final apparatus design is shown in Figure 1. The trigger-driven sieve mechanism is shown in Figure 2.
+
 ![Apparatus Body](https://i.imgur.com/WkFxC4L.png)
+_Figure 1: Apparatus body. Note that the tubing which connects the distributor to each cuvette is not included._
+
 ![Sieve](https://i.imgur.com/cextWLq.jpeg)
+_Figure 2: Trigger-driven sieve design, based on common baking sieves. The trigger pulls on a wire which drives the bottom grinding star, forcing material through the netting._
 
 # Tech Stack
 

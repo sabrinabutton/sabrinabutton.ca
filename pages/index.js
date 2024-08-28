@@ -97,15 +97,9 @@ export default function Home() {
               </h2>
               <h2
                 ref={textFour}
-                className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+                className="text-l tablet:text-xl laptop:text-xl laptopl:text-xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5 green-blue"
               >
-                {data.headerTaglineFour.txt}{" "}
-                <div className="inline-block green-blue">
-                  {" "}
-                  <Link href={data.headerTaglineFour.link}>
-                    {"@" + data.headerTaglineFour.place}
-                  </Link>
-                </div>
+                {data.headerTaglineFour}
               </h2>
             </div>
 
@@ -125,8 +119,11 @@ export default function Home() {
 
         <div className="mt-10 laptop:mt-30 p-3 laptop:p-2" ref={aboutRef}>
           <h1 className=" text-2xl text-bold pixelify-sans">About.</h1>
-          {data.aboutpara.map((para) => (
-            <p className="mt-2 text-l laptop:text-xl w-full laptop:w-3/5 text-gray-500">
+          {data.aboutpara.map((para, index) => (
+            <p
+              className="mt-2 text-l laptop:text-xl w-full laptop:w-3/5 text-gray-500"
+              key={index}
+            >
               {para}
             </p>
           ))}

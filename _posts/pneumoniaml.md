@@ -17,17 +17,20 @@ This project utilized the Keras library, which is a high-level neural networks A
 The model was trained using a convolutional neural network (CNN) architecture. CNNs are a class of deep neural networks, most commonly applied to analyzing visual imagery. They are also known as ConvNets. These networks are comprised of multiple layers of neurons, which process portions of the image, called receptive fields. The model was trained using the Adam optimizer, which is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iteratively based on training data.
 
 ![Model Accuracy](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/static/my_plots.png)
+_Figure 1: Model accuracy over epochs._
 
 # Sample Images
 
-Covid
+The following are sample images from the Kaggle training dataset. Figure 2 depicts a lung x-ray of a patient with Covid-19, Figure 3 depicts a lung x-ray of a patient with pneumonia, and Figure 4 depicts a lung x-ray of a healthy patient.
+
 ![Covid Lung xray](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/data/test/Covid/2.png)
+_Figure 2: Covid lung xray._
 
-Pneumonia
 ![Pneumonia Lung xray](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/data/test/Pneumonia/0.png)
+_Figure 3: Pneumonia lung xray._
 
-Normal
 ![Normal Lung xray](https://github.com/sabrinabutton/covid-pneumonia-ml/raw/main/data/test/Normal/1.png)
+_Figure 4: Normal lung xray._
 
 # Tech Stack
 

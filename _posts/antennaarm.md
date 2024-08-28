@@ -10,9 +10,16 @@ image: >-
 
 # Project Overview
 
-This project was undertaken to enhance the signal strength of an outdoor antenna. It involves an antenna affixed to a servo-motor-driven robotic arm, which assesses signal strength at specific angles and adjusts its orientation to optimize internet connectivity. The Arduino platform was utilized to program the servos and communication functions, interfacing with a computer through serial port communication, and featuring a C-based GUI.
+This project was undertaken to enhance the signal strength of an outdoor antenna in a highly-forested area. It involves a yagi antenna affixed to a servo-motor-driven robotic arm, which assesses signal strength at specific angles and adjusts its orientation to optimize internet connectivity. The Arduino Uno platform was utilized to program the servos and interface with a computer through serial port communication. A C-based GUI was developed to visualize the signal strength and manually control the robotic arm if necessary.
 
-![Antenna Angler Robotic Arm {400x400}](https://i.imgur.com/UNprItT.png)
+The mechanical design of the arm involved two servo motors, one which modifies the pitch of the antenna, and another which modifies the yaw. The arm was constructed from wooden planks and hinges, with the servos mounted at the base and the antenna mounted at the end effector. The Arduino Uno was installed beneath the base of the antenna arm. Since the arm was designed to go in a tree, the Arduino is sealed in a water-proof bag, and a 50 foot serial cable is used to connect the arm to the ground computer. A diagram of the antenna angling robotic arm is shown in Figure 1.
+
+![Antenna Angler Robotic Arm](https://i.imgur.com/UNprItT.png)
+_Figure 1: Antenna angling robotic arm diagram._
+
+The optimization algorithm sweeps all possible pitch and yaw angles, documenting signal strength at each angle set in a 2D data structure which represents the reachable 3D workspace. The algorithm then selects the angle with the highest signal strength and moves the arm to that position. The arm can also be manually controlled through the GUI, which displays the signal strength in real-time. The opimization algorithm is triggered from the GUI on the groundstation, and executed by the Arduino Uno.
+
+Possible improvements to the design include automatically triggered optimization sweeps, and the improvement of the algorithm to sweep more efficiently based on patterns in the ping. The GUI could also be improved to display a ping heat-map of the 3D workspace and the arm's current position.
 
 # Tech Stack
 

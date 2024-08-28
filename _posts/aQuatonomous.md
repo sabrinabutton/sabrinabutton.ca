@@ -10,4 +10,6 @@ image: >-
 
 # Project Overview
 
-This is a club I founded with some friends, dedicated to designing, building and applying autonomous surface vessels for ecological and water research. Check out [aQuatonomous.ca](aQuatonomous.ca)!
+This is a club I founded with some friends, dedicated to designing, building and applying autonomous surface vessels for ecological and water research. Check out [aQuatonomous.ca](https://aQuatonomous.ca)!
+
+Check back on this page later, and I'll have published some cool technical details about our project!

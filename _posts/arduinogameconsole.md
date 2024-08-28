@@ -1,9 +1,9 @@
 ---
 date: "2020-10-12T11:50:54.000Z"
 title: Arduino Handheld Game Console
-tagline: An arduino-based handheld game console with a 2.8" TFT display, 8 buttons, and a novel lego case.
+tagline: An arduino-based handheld game console with an LCD display, 4 push-buttons, and a novel lego case.
 preview: >-
-  An arduino-based handheld game console with a 2.8" TFT display, 8 buttons, and a novel lego case.
+  An arduino-based handheld game console with a LCD display, 4 push-buttons, and a novel lego case.
 image: >-
   https://i.imgur.com/ph30ol9.png
 ---

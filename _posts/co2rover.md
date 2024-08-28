@@ -10,15 +10,67 @@ image: >-
 
 # Project Overview
 
-A four-wheeled autonomous rover was modded with the primary objective of generating a heat-map illustrating CO2 concentration levels across a LiDAR SLAM-generated floorplan. This rover was successfully demonstrated to an audience of over 50 students and professors.
+A four-wheeled autonomous rover was modded with the primary objective of generating a heat-map illustrating CO2 concentration levels across a LiDAR SLAM-generated floorplan. This rover was successfully demonstrated to an audience of over 50 students and professors (while I had a misfortunately-timed concussion).
 
-The rover's sensor suite comprises a LiDAR unit, encoders, sharp infrared sensors, an SGP30 CO2 Sensor, an RPLiDAR, and a gyroscope and accelerometer IMU. Systems integrated to pursue the objective include joypad control, a PID Controller for precise motion, pre-packaged SLAM for environment mapping, and the implementation of a specialized algorithm to create CO2 concentration heat maps using sensor data, occupancy grids, and matplotlib visualization.
+The rover's sensor suite comprises a LiDAR unit, encoders, sharp infrared sensors, an SGP30 CO2 Sensor, an RPLiDAR, and a gyroscope and accelerometer IMU. Systems integrated to pursue the objective include joypad control, a PID controller for precise motion, pre-packaged SLAM for environment mapping, and the implementation of a specialized algorithm to create CO2 concentration heat maps using sensor data, occupancy grids, and matplotlib visualization. The physical rover is shown in Figure 1.
 
 ![Rover](https://i.imgur.com/3ZmIaMh.png)
+_Figure 1: A photo of the CO2 Monitoring Lynx Rover, featuring an RPLidar in the bootm right and a Paspberry Pi 4 in the top left._
+
+## Heat Map Algorithm
+
+My primary contribution to this project was the development of the CO2 concentration heat map algorithm. The algorithm uses the rover's sensor data to generate a heat map of CO2 concentration levels across the environment. The algorithm is based on the following nodes:
+
+### sgp30_read Node
+
+- Read current CO2 concentration from Adafruit SGP30 sensor
+- Publish to CO2 PPM topic
+
+### heat_map_generator Node
+
+- Create an empty matrix the same shape as the Occupancy Grid
+- Get the origin of the robot and the conversion factor (resolution) to convert the robot's position in meters to a place within the occupancy grid matrix
+- Update the current CO2 concentration map with the current CO2 concentration at the present location.
+  Publish localized CO2 concentration map
+
+### mask_generator Node
+
+- Wait for an Occupancy Grid
+- Resize Occupancy Grid tuple into 2D array
+- Convert all values in matrix above 95 (i.e. where there is 95 percent certainty that this location is occupied) to true (i.e. mask shows at this location), rest false
+  Publish matrix to Mask topic
+
+### heat_map_printer Node
+
+- Create an empty matrix the same shape as the Occupancy Grid
+- Get the origin of the robot and the conversion factor (resolution) to convert the robot's position in meters to a place within the occupancy grid matrix
+- Update the current CO2 concentration map with the current CO2 concentration at the present location.
+  Publish localized CO2 concentration map
+- Save file as PNG
+- Kill this node
+
+The interaction of the nodes is shown in the diagram in Figure 2.
+
+![Heat Map Algorithm](https://github.com/sabrinabutton/ros_slam_heat_map/raw/main/images/infrastructure.png)
+_Figure 2: The interaction of the nodes in the CO2 concentration heat map algorithm._
+
+# Improvements
+
+The eCO2 sensor used (Adafruit SGP30) is incapable of reading carbon dioxide concentrations below 400 ppm; therefore, in a safe room, the matrix of localized carbon dioxide values will contain values of 400 only. Since all concentrations below 400 are considered safe, this is not a concern in practice, however, became of frustration when testing the rovers heat-mapping capability when in a safe space. This can be remedied by using the other CO2 sensor on board, the Adafruit SCD30, which despite having a lower overall accuracy (+/- 30 ppm compared to +/- 1 ppm on the SGP30) can detect concentrations below 400 ppm. In future iterations, it would be convenient to allow the user to begin heat mapping and print a heat map by pressing buttons on the joy pad; currently, these operations must be done by launching the heat map package, and then running the print script, respectively, in the terminal. For production, the uploading of heat maps to an external database should be automated. This maybe done using a script within the existing ROS package which posts the map, as well as metadata about the map such as the current date and time. This database should be accessed by the Ventus Robotics website so that users can view maps from their devices online.
+
+# Sample Images
+
+The map in Figure 3 was generated in real-time using the heat map package on the rover as it drove around my room.
+
 ![CO2 Map](https://i.imgur.com/vcIysZ9.png)
+_Figure 3: A CO2 concentration heat map generated by the rover._
 
 # Tech Stack
 
 - ROS2 + RViz
-- Python
+- Python (matplotlib)
 - C++
+
+# Links
+
+- [GitHub Repository](https://github.com/sabrinabutton/ros_slam_heat_map)
