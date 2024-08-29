@@ -159,13 +159,26 @@
       "universityDate": "2021 - 2026",
       "universityPara": "B.A.Sc. Candidate in Mechatronics and Robotics Engineering"
     },
-    "languages": ["C++", "Python", "Javascript"],
-    "frameworks": ["ROS", "Bazel", "NodeJs"],
+    "languages": ["C++", "Python", "Javascript", "MATLAB", "Latex", "HTML/CSS"],
+    "frameworks": [
+      "ROS/ROS2",
+      "C++ STL",
+      "OpenCV",
+      "Tensorflow",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "matplotlib",
+      "Pandas"
+    ],
     "hardware": [
       "Solidworks",
+      "Fusion 360",
       "Altium Designer",
       "3D Printing",
-      "Electrical and Mechanical Prototyping"
+      "Soldering and Electrical Assembly"
     ]
   }
 }
