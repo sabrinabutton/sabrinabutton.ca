@@ -1,6 +1,6 @@
 {
   "name": "sabrinabutton",
-  "headerTaglineOne": "I'm Sabrina Button.",
+  "headerTaglineOne": "Sabrina Button.",
   "headerTaglineTwo": {
     "txt": "Robotics engineering student",
     "place": "Queen's University.",
@@ -17,7 +17,7 @@
   "showBlog": true,
   "darkMode": true,
   "showResume": true,
-  "headshot": "https://avatars.githubusercontent.com/u/43886209?v=4",
+  "headshot": "https://i.imgur.com/sIWI0JR.png",
   "socials": [
     {
       "id": "1",
@@ -103,6 +103,7 @@
   ],
   "services": [],
   "aboutpara": [
+    "Hi there! 👋",
     "I’m a motivated Mechatronics and Robotics Engineering student at Queen’s University, passionate about artificial intelligence, autonomous vehicles and robotics. Ultimately, I aspire to leverage these technologies to build a safer, more sustainable world—I’m impact-driven, value feedback, and love to learn.",
     "I find myself deeply interested in robotics in unpredictable outdoor environments. In the summer of 2023, I had the opportunity to conduct a research project on autonomous perception and navigation in uncrewed surface vehicles (USVs) at Ingenuity Labs using the Maritime Robotics AS Otter USV. This experience ignited my interest in autonomous vehicles and ocean robotics, leading me to found Queen's University's Autonomous Surface Vessel Design Team, aQuatonomous. I have most recently exercised my enthusiasm for autonomous robotics as part of NVIDIA's Autonomous Vehicles Planning and Control team."
   ],

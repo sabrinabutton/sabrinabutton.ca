@@ -20,8 +20,35 @@
   color: #43645a;
 }
 
+.full-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; /* Full viewport height */
+}
+
+.vertical-spacer {
+  height: 10em; /* Adjust the height as needed */
+}
+
+@media screen and (max-width: 600px) {
+  .invisible-mobile {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+.fullscreen {
+  height: 100vh;
+}
+
 body {
   @apply dark:bg-black dark:text-white;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .gradient-circle {

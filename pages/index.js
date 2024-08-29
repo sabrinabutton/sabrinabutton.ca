@@ -60,40 +60,44 @@ export default function Home() {
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
 
-      <div className="container mx-auto mb-10">
+      <div className="container mx-auto mb-10 ">
         <Header
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="flex flex-col laptop:flex-row">
-          <div className=" laptop:w-9/10">
+        <div className="flex flex-col laptop:flex-row full-screen-container ">
+          <div className=" laptop:w-full">
             <div className="mt-10 laptop:mt-30 p-3 laptop:p-2">
               <h1
                 ref={textOne}
-                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5 pixelify-sans"
+                className="text-6xl tablet:text-6xl laptop:text-6xl laptopl:text-9xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-full pixelify-sans"
               >
                 {data.headerTaglineOne}
               </h1>
               <h2
                 ref={textTwo}
-                className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+                className="text-2xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5 pixelify-sans"
               >
                 {data.headerTaglineTwo.txt}{" "}
                 <div className="inline-block green-blue">
                   <Link href={data.headerTaglineTwo.link}>
-                    {"@" + data.headerTaglineTwo.place}
+                    <div className="pixelify-sans inline-block">
+                      {"@" + data.headerTaglineTwo.place}
+                    </div>
                   </Link>
                 </div>
               </h2>
               <h2
                 ref={textThree}
-                className="text-xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+                className="text-2xl tablet:text-2xl laptop:text-2xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5 pixelify-sans"
               >
                 {data.headerTaglineThree.txt}{" "}
                 <div className="inline-block green-blue">
                   {" "}
                   <Link href={data.headerTaglineThree.link}>
-                    {"@" + data.headerTaglineThree.place}
+                    <div className="pixelify-sans inline-block">
+                      {"@" + data.headerTaglineThree.place}
+                    </div>
                   </Link>
                 </div>
               </h2>
@@ -102,17 +106,15 @@ export default function Home() {
             <Socials className="mt-2 laptop:mt-5" />
           </div>
 
-          <div className="laptop:w-2/10 flex flex-col items-center justify-center">
+          <div className="laptop:w-1/10 flex flex-col items-center justify-center invisible-mobile">
             <img
               src={data.headshot}
               alt="Sabrina's Headshot"
-              className="rounded-full w-4/5 p-5 mt-10 laptop:w-4/5"
-              width={300}
-              height={300}
+              className=" w-3/5 pt-20 laptop:w-4/5 invisible-mobile"
             />
           </div>
         </div>
-
+        <div className="vertical-spacer"></div>
         <div className="mt-10 laptop:mt-30 p-3 laptop:p-2" ref={aboutRef}>
           <h1 className=" text-2xl text-bold pixelify-sans">About.</h1>
           {data.aboutpara.map((para, index) => (
