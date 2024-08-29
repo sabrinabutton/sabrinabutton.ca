@@ -4,6 +4,7 @@ import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
+import { Analytics } from "@vercel/analytics/react";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
@@ -50,6 +51,7 @@ export default function Home() {
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
+      <Analytics />
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
