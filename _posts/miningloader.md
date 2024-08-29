@@ -10,14 +10,20 @@ image: >-
 
 # Project Overview
 
-Created a line-follower navigation algorithm for a robot equipped with an Arduino Uno, SHARP infrared sensors, and DC motors. Designed and modelled a scoop and arm mechanism using Linkage, and expanded the program to perform tasks such as scooping, carrying, and dropping dirt on queues from the infrared sensors.
+Created a line-follower navigation algorithm for a robot equipped with an Arduino Uno, SHARP infrared sensors, and DC motors. Designed and modelled a scoop and arm mechanism using Linkage, and expanded the program to perform tasks such as scooping, carrying, and dropping dirt on queues from the infrared sensors. The gameboard which the robot navigates is shown in Figure 1.
 
-![Gameboard {400x400}](https://i.imgur.com/ioj2Dz9.png)
+![Gameboard](https://i.imgur.com/ioj2Dz9.png)
+_Figure 1: Gameboard for the autonomous mining loader._
 
 # Mechanical Linkage Design
 
+A mechanical linkage was designed to scoop and carry dirt using only a single servo motor. The scoop mechanism was designed using Linkage, a software tool for creating mechanical systems. The up-position for the scoop is shown in Figure 2, and the down-position is shown in Figure 3.
+
 ![Up](https://i.imgur.com/vdXwthr.png)
+_Figure 2: Scoop mechanism in the up-position._
+
 ![Down](https://i.imgur.com/avLETse.png)
+_Figure 3: Scoop mechanism in the down-position._
 
 # Tech Stack
 
