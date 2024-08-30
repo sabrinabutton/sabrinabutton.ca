@@ -23,13 +23,10 @@ As an extension to my prior work, I researched an designed novel particle-filter
 
 # Field Tests
 
-These endeavors culminated in comprehensive in-water testing, conducted across four distinct locations in Kingston and Minden, Ontario (at the NCRN Field Trials). These tests almost resulted in myself and my labmate being capsized in a collision between our canoe and the Otter USV gone-rogue (not unlike [Stephen King's Christine](<https://en.wikipedia.org/wiki/Christine_(King_novel)>)). I've included some fun field testing photos from Minden in Figure 2 and Figure 3!
+These endeavors culminated in comprehensive in-water testing, conducted across four distinct locations in Kingston and Minden, Ontario (at the NCRN Field Trials). These tests almost resulted in myself and my labmate being capsized in a collision between our canoe and the Otter USV gone-rogue (not unlike [Stephen King's Christine](<https://en.wikipedia.org/wiki/Christine_(King_novel)>)). I've included a fun field testing photo from Minden in Figure 2!
 
 ![Mission Control](https://i.imgur.com/O9p8jia.jpeg)
 _Figure 2: Mission control during a field test on a very rainy day in Minden, Ontario at NCRN field trials._
-
-![Drenched with the boat](https://i.imgur.com/GGtUbXd.jpeg)
-_Figure 3: Drenched alongside the Otter USV while setting up for field tests in Minden, Ontario at NCRN field trials._
 
 ## Tech Stack
 
