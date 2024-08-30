@@ -35,6 +35,11 @@ const Footer = ({}) => {
         <Link href="http://www.sabrinabutton.com">
           <a className="underline underline-offset-1">Sabrina Button</a>
         </Link>
+        , who used{" "}
+        <Link href="https://www.chetanverma.com/">
+          <a className="underline underline-offset-1">Chetan Verma</a>
+        </Link>
+        's template as a boilerplate.
       </h1>
     </>
   );
