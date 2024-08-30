@@ -39,7 +39,7 @@ const Footer = ({}) => {
         <Link href="https://www.chetanverma.com/">
           <a className="underline underline-offset-1">Chetan Verma</a>
         </Link>
-        's template as a boilerplate.
+        &apos;s template as a boilerplate.
       </h1>
     </>
   );
