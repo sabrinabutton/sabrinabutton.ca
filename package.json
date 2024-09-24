@@ -29,6 +29,7 @@
     "remark-html": "^15.0.1",
     "styled-components": "^5.3.5",
     "tailwindcss": "^3.0.24",
+    "use-sound": "^4.0.3",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
