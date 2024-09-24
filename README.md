@@ -2,7 +2,7 @@
 Active as of August 2024.
 
 ### Live - https://sabrinabutton.ca
-Deployed with Vercel 🔺.
+Deployed with [Vercel🔺](https://vercel.com).
 
 ### Sections
 
