@@ -17,7 +17,7 @@ Deployed with [Vercel🔺](https://vercel.com).
 - run `yarn`
 - `yarn dev`
 
-### Tech Stack Used - 
+### Tech Stack Used
 - Next.js
 - TailwindCSS
 
