@@ -2,13 +2,13 @@
   "name": "sabrinabutton",
   "headerTaglineOne": "Sabrina Button.",
   "headerTaglineTwo": {
-    "txt": "Robotics engineering student",
-    "place": "Queen's University.",
+    "txt": "robotics engineering student",
+    "place": "queen's university.",
     "link": "https://queensu.ca"
   },
   "headerTaglineThree": {
-    "txt": "Co-captain",
-    "place": "aQuatonomous.",
+    "txt": "co-founder",
+    "place": "aquatonomous.",
     "link": "https://aquatonomous.ca"
   },
 
@@ -105,7 +105,7 @@
   "aboutpara": [
     "Hi there! 👋",
     "I’m a motivated Mechatronics and Robotics Engineering student at Queen’s University, passionate about artificial intelligence, autonomous vehicles and robotics. Ultimately, I aspire to leverage these technologies to build a safer, more sustainable world—I’m impact-driven, value feedback, and love to learn.",
-    "I find myself deeply interested in robotics in unpredictable outdoor environments. In the summer of 2023, I had the opportunity to conduct a research project on autonomous perception and navigation in uncrewed surface vehicles (USVs) at Ingenuity Labs using the Maritime Robotics AS Otter USV. This experience ignited my interest in autonomous vehicles and ocean robotics, leading me to found Queen's University's Autonomous Surface Vessel Design Team, aQuatonomous. I have most recently exercised my enthusiasm for autonomous robotics as part of NVIDIA's Autonomous Vehicles Planning and Control team."
+    "I find myself deeply interested in robotics in unpredictable outdoor environments. In the summer of 2023, I had the opportunity to conduct a research project on autonomous perception and navigation in uncrewed surface vehicles (USVs) at Ingenuity Labs using the Maritime Robotics AS Otter USV. This experience ignited my interest in autonomous vehicles and ocean robotics, leading me to found Queen's University's Autonomous Surface Vessel Design Team, aQuatonomous.I’ve most recently applied my passion for autonomous robotics on NVIDIA’s Autonomous Vehicles Planning and Control team, and now as part of the Planning and Control team at Provectus Robotics Solutions."
   ],
 
   "resume": {
@@ -114,6 +114,14 @@
     "tagline": "I'm a robotics engineering student driven by impact.",
     "description": "I have delivered world-class robotics software solutions for autonomous vehicles, ocean drones, and industrial robots. I am passionate about building software that interacts with the physical world.",
     "experiences": [
+      {
+        "id": "1",
+        "dates": "January 2025 - Present",
+        "type": "Internship",
+        "company": "Provectus Robotics Solutions",
+        "position": "Robotics Engineering",
+        "bullets": []
+      },
       {
         "id": "1",
         "dates": "May 2024 - August 2024",
