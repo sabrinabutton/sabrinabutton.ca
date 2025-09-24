@@ -8,13 +8,14 @@ image: >-
   https://i.imgur.com/KWDSYBS.jpeg
 ---
 
+# Impact
+This autonomous pet feeder ensures pets are fed consistently and safely, even when owners are away. By integrating AI-driven pet recognition, it prevents unauthorized access by other animals, enhancing pet safety. The web-based interface allows for easy scheduling and monitoring, making pet care more convenient for busy owners. This project supports responsible pet ownership and contributes to animal welfare.
+
+# Project Overview
+
 This feeder is an intelligent, internet-connected system that ensures pets are fed consistently and safely—even when owners are away. Below is an in-depth dive into our design, engineering trade-offs, and software logic.
 
-➡️ [Demo - AI Pet Recognition + TCP Communication on an Autonomous Pet Feeder](https://youtu.be/ULbh-ibkO7Q)
-
----
-
-## 📌 Project Summary
+[Demo - AI Pet Recognition + TCP Communication on an Autonomous Pet Feeder](https://youtu.be/ULbh-ibkO7Q)
 
 **Objective:** Create a customizable, reliable, and safe automated feeder that adjusts to pet type and feeding schedules.
 **Company Alias:** Petronix (fictitious for course purposes)
@@ -25,13 +26,12 @@ This feeder is an intelligent, internet-connected system that ensures pets are f
 * Dual-motor control for dispensing and bowl serving
 * Airtight storage and secure bowl containment
 
----
 
-## 🛠️ Mechanical Design
+# Mechanical Design
 
 Our design separates the feeder into two mechanical subsystems: **Dispensing** and **Serving**.
 
-### Mechanism & Actuator Choice
+## Mechanism & Actuator Choice
 
 Each subsystem was sized based on torque and speed requirements. A **helical screw driven by a stepper motor** was used to dispense food. The **serving tray** is actuated via a servo motor and linear guide system.
 
@@ -41,9 +41,8 @@ Each subsystem was sized based on torque and speed requirements. A **helical scr
 
 A gear-up stage was added for the servo to achieve the necessary range of motion.
 
----
 
-## 📷 Sensor Integration
+## Sensor Integration
 
 We use a multi-sensor approach for robust functionality:
 
@@ -71,9 +70,9 @@ Initially used for PID weight control. Abandoned due to dynamic error and sensit
 
 ---
 
-## 🧠 Software Architecture
+# Software Architecture
 
-### State Machine Overview
+## State Machine Overview
 
 The core logic is a loop-driven **state machine**. Each loop iteration does the following:
 
@@ -85,13 +84,13 @@ The core logic is a loop-driven **state machine**. Each loop iteration does the 
 
 If an error is detected, the system returns to the `IDLE` state for safety.
 
-### State Action Logic
+## State Action Logic
 
 Each state handles specific logic. Here's a breakdown of which actions are triggered in each state:
 
 ![State action logic per state](https://i.imgur.com/IwMqspj.jpeg)
 
-### Web UI Features
+## Web UI Features
 
 The lightweight web interface is hosted on the Arduino itself. It supports:
 
@@ -105,31 +104,30 @@ The lightweight web interface is hosted on the Arduino itself. It supports:
 
 ![Web UI Logic](https://i.imgur.com/Hdx4dSd.jpeg)
 
----
 
-## 🎯 System Objectives
 
-### Variable Control
+# System Objectives
+
+## Variable Control
 
 System variables are adjustable from the web UI and saved in EEPROM to persist through reboots. This ensures pets receive the correct schedule regardless of power state.
 
-### Portion Control
+## Portion Control
 
 We use a **time-based method** for feeding: a calibrated 3-second auger run equals one serving. This avoids reliance on the noisy load cell while ensuring consistent portions.
 
-### Web Override Mode
+## Web Override Mode
 
 An override mode allows users to remotely control the bowl and auger, halting the automatic loop. This is useful for maintenance or emergency feeding.
 
 ![Override control panel](https://i.imgur.com/ZdiKwcf.png)
 
-### Secure Bowl Containment
+## Secure Bowl Containment
 
 The bowl is mechanically hidden during the dispensing phase to prevent premature access. The bowl extends only when feeding is complete.
 
----
 
-## 🧠 AI Pet Recognition via TCP
+# AI Pet Recognition via TCP
 
 We implemented **AI-based pet detection** using a JPEG burst from ArduCAM sent to a laptop Flask server over TCP. A lightweight CNN classifies the image as:
 
@@ -143,7 +141,7 @@ This result determines whether the bowl is extended and food is dispensed.
 
 ---
 
-## 🧩 Key Takeaways
+# Key Takeaways
 
 * A modular mechanical and software design makes the system adaptable and repairable
 * Despite sensor limitations (notably the load cell), reliable performance was achieved via creative trade-offs

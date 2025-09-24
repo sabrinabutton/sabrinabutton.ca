@@ -8,6 +8,9 @@ image: >-
   https://i.imgur.com/YCLc4EV.png
 ---
 
+# Impact
+This CO2 monitoring rover enhances indoor air quality management by autonomously mapping CO2 concentration levels. By identifying areas with elevated CO2, it helps improve ventilation strategies, promoting healthier environments in homes, offices, and public spaces. This project supports SDG 3 (Good Health and Well-being) by addressing indoor air pollution, which can lead to respiratory issues and decreased cognitive function. The open-source nature of the project encourages further innovation in environmental monitoring.
+
 # Project Overview
 
 A four-wheeled autonomous rover was modded with the primary objective of generating a heat-map illustrating CO2 concentration levels across a LiDAR SLAM-generated floorplan. This rover was successfully demonstrated to an audience of over 50 students and professors (while I had a misfortunately-timed concussion).

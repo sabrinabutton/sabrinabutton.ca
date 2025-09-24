@@ -8,6 +8,9 @@ image: >-
   https://i.imgur.com/6XjH6rd.png
 ---
 
+# Impact
+This project contributes to the field of astrobiology by providing a practical solution for in-situ chemical analysis of extraterrestrial soil samples. The "Rover Payload Testing Apparatus" enables the detection of biosignatures, which are crucial for identifying potential signs of past or present life on other planets. By facilitating efficient and reliable testing in a laboratory setting, this apparatus supports SDG 9 (Industry, Innovation, and Infrastructure) by promoting innovation in scientific instrumentation. The design's emphasis on simplicity and effectiveness also makes it accessible for educational purposes, inspiring future generations of scientists and engineers.
+
 # Project Overview
 
 The “Rover Payload Testing Apparatus” aimed to fulfill Queen’s Space Engineering Team’s need for a chemical testing device to conduct wet chemical tests for biosignatures during the fall semester, in advance of the rover's payload assembly in the winter semester. The apparatus is for laboratory use, aimed at detecting biosignatures in soil samples. Three distinct models were devised to meet the client's specifications, all featuring a cylindrical body, sieve, funnel, and soil sample pathway leading to cuvettes for wet chemical biosignature testing. The chosen design prioritized simplicity and effectiveness, employing a manually operated sieve and a clever distribution system.

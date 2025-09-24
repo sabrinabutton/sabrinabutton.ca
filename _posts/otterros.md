@@ -8,7 +8,10 @@ image: >-
   https://i.imgur.com/ivFebMj.jpeg
 ---
 
-# Otter ROS
+# Impact
+This project enhances the capabilities of the Otter Uncrewed Surface Vehicle (USV) by integrating it with Robot Operating System 2 (ROS2) and developing a novel localization algorithm, SaILL. By enabling advanced control and data analysis through ROS2, the project supports SDG 9 (Industry, Innovation, and Infrastructure) by promoting innovation in marine robotics. The SaILL algorithm addresses challenges in GPS-denied environments, improving the reliability and accuracy of USV operations. This advancement is crucial for environmental monitoring, research, and maritime applications, contributing to safer and more efficient marine operations.
+
+# Project Overview
 
 My work on the Otter USV commenced with a series of boat upgrades and hardware integrations. This included attaching LiDAR to the Otter by designing and 3D printing a reinforced carbon-fiber PLA mount. The mount was attached to the retrival hook on the Otter's targa, as shown in Figure 1. I additionally designed and a waterproof wiring box for the lidar, and a two-piece antenna mount, both also on the targa. I additionally assisted in the wiring and concept development of a payload hardware box. This unit incorporated an ethernet switch, power board, Jetson Orin, and radio components, optimizing the Otter's hardware for advanced functionalities.
 
