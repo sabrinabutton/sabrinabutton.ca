@@ -8,13 +8,16 @@ image: >-
   https://i.imgur.com/nSHS0f3.jpeg
 ---
 
+# Impact
+This project showcases the potential of student-led innovation in autonomous maritime technology, contributing to environmental monitoring and research. By developing an Autonomous Surface Vehicle (ASV) equipped with advanced sensors and real-time telemetry, the Nautical Disaster enhances our ability to study and protect aquatic ecosystems. The project supports SDG 14 (Life Below Water) by promoting sustainable practices in marine environments. Additionally, it provides valuable hands-on experience for students in engineering, robotics, and environmental science, fostering the next generation of innovators dedicated to environmental stewardship.
+
+# Project Overview 
+
 In Fall 2023, I co-founded aQuatonomous—a student-led design team with a vision to reimagine how we explore, monitor, and protect our aquatic environments. What started as a spark of curiosity in autonomous systems and environmental stewardship has grown into a tight-knit team of passionate engineers, designers, and researchers, united by a common goal: building smarter, greener marine technology.
 
-The process of launching aQuatonomous was anything but simple. It began with a core idea—could we build an autonomous surface vessel (ASV) that could navigate local waterways, collect scientific data, and promote sustainability? From there, it became a matter of rallying like-minded students, pitching the concept to university leadership, and securing early funding and workspace support. Countless late nights followed, filled with CAD models, soldering irons, systems diagrams, and code commits.
+Our Mission: *To design and deploy autonomous maritime technology that supports sustainable research, fosters environmental awareness, and empowers students through hands-on innovation.*
 
-Our mission is clear: *To design and deploy autonomous maritime technology that supports sustainable research, fosters environmental awareness, and empowers students through hands-on innovation.*
-
-That mission took physical form in our first major build: The Nautical Disaster, our flagship ASV. Named with a wink to its turbulent early testing days (and possibly a Tragically Hip reference), the Nautical Disaster is an electric vessel equipped with real-time telemetry, water quality sensors, and a robust Pixhawk-based control system. It was engineered specifically for deployment on Lake Ontario, a body of water whose ecological complexity and environmental importance deserve far more attention than they often receive.
+In 2025 we built The Nautical Disaster, our flagship ASV. Named with a wink to its turbulent early testing days (and a reference to The Tragically Hip), the Nautical Disaster is an electric vessel equipped with real-time telemetry, water quality sensors, and a robust Pixhawk-based control system. It was engineered specifically for deployment on Lake Ontario, a body of water whose ecological complexity and environmental importance pose specific engineering challenges.
 
 ![Nautical Disaster](https://i.imgur.com/vdTsQ6H.jpeg)
 _Figure 1: Logan, Aaron, Will and Angus holding up the Nautical Disaster (with our flag from The Tragically Hip!)_
@@ -24,14 +27,10 @@ And in March 2025, our mission took us far from home—to Sarasota, Florida, for
 ![Nautical Disaster in the tent at RoboBoat](https://i.imgur.com/CWtYmq6.jpeg)
 _Figure 2: The Nautical Disaster in the team village at RoboBoat 2025._
 
-Back home, we were honoured to win the Overall Award at the Queen’s Design Team Awards, recognizing our technical achievements, environmental focus, and team culture. From our founding team of three, aQuatonomous has grown to over 80 students, organized into 8 interdisciplinary subteams covering everything from mechanical design and embedded systems to autonomy and sustainability outreach.
+Back at Queen's, we were honoured to win the Overall Award at the Queen’s Design Team Awards, recognizing our technical achievements, environmental focus, and team culture. From our founding team of three, aQuatonomous has grown to over 60 students, organized into 8 interdisciplinary subteams covering everything from mechanical design and embedded systems to autonomy and sustainability outreach.
 
 ![Overall Award](https://i.imgur.com/o3K52Ul.jpeg)
 _Figure 3: Our executive team holding the trophy for the Overall Award in 2025!_
-
-It’s been a whirlwind—of solder fumes, code sprints, lake trials, and cross-country shipping crates. But above all, it's been proof that when students are trusted with real responsibility and a real-world problem, they’ll rise to the challenge.
-
-And we’re just getting started.
 
 ## Links
 

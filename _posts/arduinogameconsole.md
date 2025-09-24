@@ -8,6 +8,9 @@ image: >-
   https://i.imgur.com/ph30ol9.png
 ---
 
+# Impact
+This Arduino-Lego game console makes learning electronics more approachable by turning it into a fun, hands-on activity. Using familiar Lego pieces alongside simple components like an Arduino, LCD screen, and buttons, kids can build their own playable game at home. By lowering barriers to learning hardware and coding, it supports SDG 4 (Quality Education). The build process and code are openly shared, making the project accessible to anyone who wants to learn.
+
 # Project Overview
 
 Amid the COVID-19 pandemic, I embarked on a weekend project inspired by online gaming console creations utilizing Raspberry Pi. I sought to replicate a similar concept using an Arduino, spare push buttons, and a display salvaged from a previous endeavor.

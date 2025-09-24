@@ -8,6 +8,9 @@ image: >-
   https://i.imgur.com/Y0nwX35.png
 ---
 
+# Impact
+This autonomous mining loader robot demonstrates fundamental robotics concepts such as line-following navigation and mechanical manipulation using a scoop and arm mechanism. By integrating sensors and actuators, it showcases how robots can perform tasks like scooping, carrying, and dropping objects based on environmental cues. This project supports SDG 9 (Industry, Innovation, and Infrastructure) by promoting innovation in robotics and automation. The open-source nature of the project encourages further exploration and learning in the field of robotics.
+
 # Project Overview
 
 Created a line-follower navigation algorithm for a robot equipped with an Arduino Uno, SHARP infrared sensors, and DC motors. Designed and modelled a scoop and arm mechanism using Linkage, and expanded the program to perform tasks such as scooping, carrying, and dropping dirt on queues from the infrared sensors. The gameboard which the robot navigates is shown in Figure 1.

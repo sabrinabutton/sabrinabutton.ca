@@ -8,9 +8,12 @@ image: >-
   https://i.imgur.com/oIFjjsQ.png
 ---
 
+# Impact
+This project was created to improve internet connectivity in a highly-forested area, where signal strength is often weak due to obstructions. By utilizing a robotic arm to adjust the orientation of an outdoor antenna, the system can optimize signal reception and provide a more reliable internet connection. This is particularly beneficial for remote locations where traditional infrastructure may be lacking.
+
 # Project Overview
 
-This project was undertaken to enhance the signal strength of an outdoor antenna in a highly-forested area. It involves a yagi antenna affixed to a servo-motor-driven robotic arm, which assesses signal strength at specific angles and adjusts its orientation to optimize internet connectivity. The Arduino Uno platform was utilized to program the servos and interface with a computer through serial port communication. A C-based GUI was developed to visualize the signal strength and manually control the robotic arm if necessary.
+The presented project involves a yagi antenna affixed to a servo-motor-driven robotic arm, which assesses signal strength at specific angles and adjusts its orientation to optimize internet connectivity. The Arduino Uno platform was utilized to program the servos and interface with a computer through serial port communication. A C-based GUI was developed to visualize the signal strength and manually control the robotic arm if necessary.
 
 The mechanical design of the arm involved two servo motors, one which modifies the pitch of the antenna, and another which modifies the yaw. The arm was constructed from wooden planks and hinges, with the servos mounted at the base and the antenna mounted at the end effector. The Arduino Uno was installed beneath the base of the antenna arm. Since the arm was designed to go in a tree, the Arduino is sealed in a water-proof bag, and a 50 foot serial cable is used to connect the arm to the ground computer. A diagram of the antenna angling robotic arm is shown in Figure 1.
 
